@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="form-group">
+    <%= simple_form_for @dose, :url => {:action => "create"} do |f| %>
+      <%= f.input :description %>
+      <%= f.association :cocktail %>
+      <%= f.association :ingredient %>
+      <%= f.submit "Validate", class: "btn btn-primary" %>
+    <% end %>
+    <hr>
+    <%= link_to "Back to the list", cocktails_path, class: "btn btn-primary"%>
+  </div>
+</div>
