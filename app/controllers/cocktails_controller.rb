@@ -1,7 +1,7 @@
 class CocktailsController < ApplicationController
   def index
     if params[:query]
-      @cocktails = Cocktail.where(name: params[:query])
+      @cocktails = Cocktail.where(name: params[:query].downcase)
     else
       @cocktails = Cocktail.all
     end
