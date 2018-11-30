@@ -1,24 +1,50 @@
 <div class="container">
-  <div class="text-center">
     <h2><%= @cocktail.name %></h2>
     <hr>
-    <ul class="list-unstyled">
-      <% @cocktail.ingredients.each do |ingredient| %>
-      <li>
-        <% ingredient.doses.each do |dose| %>
-         <%= ingredient.name%> <%= dose.description%> >
+    <div class="ingredient-container">
+      <table class="table">
+        <thead>
+          <tr>
+              <th scope="col">#</th>
+              <th scope="col">Ingrédients</th>
+              <th scope="col">Descriptions</th>
+              <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @cocktail.ingredients.each_with_index do |ingredient, index| %>
+            <% ingredient.doses.each do |dose| %>
+              <tr>
+                <th scope="row"><%= index + 1 %></th>
+                <td class="font-italic"><%= ingredient.name%></td>
+                <td class="font-italic"> <%= dose.description%></td>
+                <td><%= link_to '<i class="far fa-trash-alt"></i>'.html_safe, dose_path(id: dose.id, cocktail_id: @cocktail.id),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" }, class: "text-center" %></td>
 
-         <%= link_to '<i class="far fa-trash-alt"></i>'.html_safe, cocktail_dose_path(id: dose.id, cocktail_id: @cocktail.id),
-      method: :delete,
-      data: { confirm: "Are you sure?" } %>
-        <% end %>
-      </li>
-
-    <% end %>
-    </ul>
-
+              </tr>
+            <% end %>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
     <hr>
-  </div>
-  <%= link_to "Back to the list", cocktails_path, class: "btn btn-primary" %>
-  <%= link_to "Add a dose", new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
+  <%= link_to '<i class="fas fa-plus"></i> Add a dose'.html_safe, new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
+  <%= link_to '<i class="fas fa-undo-alt"></i> Back'.html_safe, cocktails_path, class: "btn btn-primary" %>
 </div>
+
+<!-- <table>
+    <thead>
+        <tr>
+            <th colspan="2">The table header</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>The table body</td>
+            <td>with two columns</td>
+        </tr>
+    </tbody>
+</table> -->
+
+

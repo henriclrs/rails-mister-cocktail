@@ -1,7 +1,31 @@
-<div class="container text-center">
-  <%= link_to "Add a new cocktail", new_cocktail_path %>
-
-  <% @cocktails.each do |cocktail|%>
-  <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
-  <% end %>
+<div class="trompette-banner">
 </div>
+
+
+<div class="container" id="home-cocktails">
+  <h2 class="text-center">Une envie particulière ?</h2>
+  <div class="row">
+    <% @cocktails.each do |cocktail|%>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
+            <div class="card-category"></div>
+            <div class="card-description">
+              <h2><%= cocktail.name %></h2>
+            </div>
+            <%= link_to "Recipe", cocktail_path(cocktail), class: "card-link" %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+<div class="container text-center">
+  <div class="row">
+    <div class="col-xs-12" id="new_cocktail">
+      <%= link_to '<i class="fas fa-plus"></i> Add a new cocktail'.html_safe, new_cocktail_path, class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>
+
+<button id="sweet-alert-demo" class="btn btn-primary">Click me!</button>
