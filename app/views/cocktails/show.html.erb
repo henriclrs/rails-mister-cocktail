@@ -27,6 +27,10 @@
           <% end %>
         </tbody>
       </table>
+      <hr>
+      <% if !@cocktail.photo.nil? %>
+        <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+      <% end %>
     </div>
     <hr>
   <%= link_to '<i class="fas fa-plus"></i> Add a dose'.html_safe, new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
