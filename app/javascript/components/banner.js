@@ -8,8 +8,8 @@ function bindSweetAlertButtonDemo() {
     swalButton.addEventListener('click', () => {
       console.log('click')
       swal({
-        title: "A nice alert",
-        text: "This is a great alert, isn't it?",
+        title: "Done",
+        text: "La dose a bien été",
         icon: "success"
       });
     });

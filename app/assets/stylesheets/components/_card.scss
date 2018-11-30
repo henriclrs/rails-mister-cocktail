@@ -6,12 +6,15 @@
   background-position: center;
   color: white;
   position: relative;
+  margin-bottom: 20px;
   &:hover{
     margin-top: -5px;
   }
   h2{
   color: white;
 }
+  background-image:
+   asset-url("martini.png");
 }
 
 h2{
