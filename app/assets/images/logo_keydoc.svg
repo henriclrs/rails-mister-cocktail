@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="190.73" height="319.42" viewBox="0 0 190.73 319.42">
+  <defs>
+    <linearGradient id="linear-gradient" x1="9.843" y1="-4.39" x2="9.843" y2="-5.273" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#171b93"/>
+      <stop offset="0.049" stop-color="#171f95"/>
+      <stop offset="0.355" stop-color="#1532a0"/>
+      <stop offset="0.669" stop-color="#133da6"/>
+      <stop offset="1" stop-color="#1341a8"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="0.939" x2="0.5" y2="-0.045" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="0.088" y1="0.041" x2="0.756" y2="1.061" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2f5ad3"/>
+      <stop offset="0.072" stop-color="#345ed9"/>
+      <stop offset="0.37" stop-color="#456cec"/>
+      <stop offset="0.677" stop-color="#5074f7"/>
+      <stop offset="1" stop-color="#5377fb"/>
+    </linearGradient>
+  </defs>
+  <g id="Groupe_1954" data-name="Groupe 1954" transform="translate(-204.04 -41.56)">
+    <path id="Tracé_4044" data-name="Tracé 4044" d="M264.04,277.62l-2.76,2.74-2.5,2.48.06-.06,2.47-2.45,2.8-2.77,3.77-3.73,31.75-31.42-31.81,31.47Z" fill="none"/>
+    <path id="Tracé_4045" data-name="Tracé 4045" d="M258.78,282.84l-54.74,54.19v23.95h60.07V289.5l-.08-.1Z" fill="url(#linear-gradient)"/>
+    <path id="Tracé_4046" data-name="Tracé 4046" d="M231.95,228.96l31.81-31.49.35-.35h0V41.56H204.04V256.58l18.87-18.67Z" fill="url(#linear-gradient-2)"/>
+    <path id="Tracé_4047" data-name="Tracé 4047" d="M261.28,280.36l2.76-2.74,3.78-3.74,31.81-31.47.06-.07,9.04-8.95,69.45-68.76H296.93L272.8,188.52l-8.69,8.6h0l-.35.35-31.81,31.49-9.04,8.95-18.87,18.67h0v80.45h0l54.74-54.19Z" fill="#5377fb"/>
+    <path id="Tracé_4048" data-name="Tracé 4048" d="M308.65,253.68l-9.02-11.27-31.75,31.42-3.77,3.73-2.8,2.77-2.47,2.45-.06.06,5.25,6.56.08.1,3.69,4.62,53.72,66.82h73.25Z" fill="url(#linear-gradient-3)"/>
+  </g>
+</svg>
